@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-analyzer"
+version = "0.1.0"
+description = "Local audio chord analysis MVP"
+requires-python = ">=3.10,<3.14"
+dependencies = ["librosa>=0.10.2,<0.12", "numpy>=1.24,<2.3", "numba>=0.61,<0.62"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+music-analyze = "music_analyzer.cli:main"
+music-tab = "music_analyzer.tab_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["backend/src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend/src"]
+testpaths = ["backend/tests"]

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "duration": 8.0,
+  "bpm": 120.0,
+  "beats": [],
+  "key": "C major",
+  "key_confidence": 0.0,
+  "time_signature": "4/4",
+  "chords": [
+    {"start": 0.0, "duration": 2.0, "chord": "C", "confidence": 1.0, "source": "analysis"},
+    {"start": 2.0, "duration": 2.0, "chord": "Am", "confidence": 1.0, "source": "analysis"},
+    {"start": 4.0, "duration": 2.0, "chord": "F", "confidence": 1.0, "source": "analysis"},
+    {"start": 6.0, "duration": 2.0, "chord": "G", "confidence": 1.0, "source": "analysis"}
+  ]
+}
